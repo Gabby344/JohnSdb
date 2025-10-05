@@ -12,8 +12,8 @@
   <style>
     body {
       font-family: 'Georgia', serif;
-      background-color: #fff;
-      color: #333;
+      background-color: #f4f4f4;
+      color: #2c3e50;
       padding: 40px;
       max-width: 800px;
       margin: auto;
@@ -21,8 +21,9 @@
 
     h1 {
       text-align: center;
-      color: #d94f70;
+      color: #2c3e50;
       margin-bottom: 10px;
+      font-size: 2em;
     }
 
     .intro {
@@ -30,16 +31,17 @@
       font-style: italic;
       margin-bottom: 30px;
       font-size: 1.1em;
+      color: #555;
     }
 
     .testimonial {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #bbb;
       padding: 20px 0;
       page-break-inside: avoid;
     }
 
     .testimonial strong {
-      color: #a03c6f;
+      color: #1a252f;
     }
 
     .photo {
@@ -56,7 +58,7 @@
       margin: 30px auto;
       padding: 10px 20px;
       font-size: 1em;
-      background-color: #d94f70;
+      background-color: #2c3e50;
       color: white;
       border: none;
       border-radius: 6px;
@@ -64,7 +66,7 @@
     }
 
     button:hover {
-      background-color: #c03b5f;
+      background-color: #1a252f;
     }
 
     @media print {
@@ -74,10 +76,10 @@
 </head>
 <body>
 
-  <img src="IMG_7447.jpeg" alt="Abigaelle Kabelu" class="photo">
+  <img src="IMG_7444.jpeg" alt="John Ilunga" class="photo">
 
   <h1>Livre des témoignages</h1>
-  <div class="intro">“Chaque mot est une lumière dans le cœur.”</div>
+  <div class="intro">“Chaque mot est une lumière dans le cœur de John.”</div>
 
   <div id="livre"></div>
 
@@ -98,7 +100,7 @@
 
     const livre = document.getElementById('livre');
 
-    db.collection("testimonials").orderBy("timestamp", "asc").get().then(snapshot => {
+    db.collection("john_testimonials").orderBy("timestamp", "asc").get().then(snapshot => {
       snapshot.forEach(doc => {
         const data = doc.data();
         const name = data.name || "Anonyme";
