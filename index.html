@@ -131,19 +131,19 @@
 <body>
 
   <section class="hero">
-    <img src="https://raw.githubusercontent.com/Gabby344/Abigael-Livre-/main/image/abi.jpeg" alt="Abigaelle Kabelu" class="hero-img">
+    <img src="https://raw.githubusercontent.com/Gabby344/Abigael-Livre-/main/image/abi.jpeg" alt="John Ilunga" class="hero-img">
     <div class="hero-text">
-      <h1>🌸 Abigaelle Kabelu</h1>
+      <h1>🌸 John Ilunga</h1>
       <p>“Une lumière douce dans nos vies, un sourire qui inspire.”</p>
     </div>
   </section>
 
   <h1>📖 THE GIFT OF WORDS</h1>
-  <p>Écris un mot doux, un souvenir, ou une bénédiction pour elle.</p>
+  <p>Écris un mot doux, un souvenir, ou une bénédiction pour lui.</p>
 
   <form id="testimonialForm">
     <input type="text" id="name" placeholder="Ton prénom" required />
-    <textarea id="message" rows="4" placeholder="Ton message pour Abigaelle" required></textarea>
+    <textarea id="message" rows="4" placeholder="Ton message pour John" required></textarea>
     <button type="submit">Ajouter au livre</button>
   </form>
 
@@ -155,7 +155,7 @@
 
   <div id="book"></div>
 
-  <footer>Conçu avec amour par <strong>Gabby Umba</strong></footer>
+  <footer>Conçu par <strong>Gabby Umba +243 99 72 27 819</strong></footer>
 
   <script>
     const firebaseConfig = {
@@ -193,7 +193,7 @@
     });
 
     function shareWhatsApp(message) {
-      const encoded = encodeURIComponent(`Message pour Abigael :\n\n${message}`);
+      const encoded = encodeURIComponent(`Message pour John :\n\n${message}`);
       window.open(`https://wa.me/?text=${encoded}`, '_blank');
     }
 
